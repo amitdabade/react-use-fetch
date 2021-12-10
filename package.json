@@ -1,7 +1,7 @@
 {
-  "name": "@amitdabade/react-hello",
-  "version": "1.0.4",
-  "description": "A simple react component that prints Hello, World!",
+  "name": "@react-use-hooks/use-fetch",
+  "version": "1.0.0",
+  "description": "React hook to fetch data from network, with some additional awesome features.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amitdabade/react-hello.git"
+    "url": "git+https://github.com/amitdabade/react-use-fetch.git"
   },
   "author": "Amit Dabade",
   "license": "MIT",
