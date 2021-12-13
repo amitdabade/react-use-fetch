@@ -12,7 +12,7 @@ npm i @react-use-hooks/use-fetch --save
 
 ## Code:
 
-```
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { useFetch } from "@react-use-hooks/use-fetch";
