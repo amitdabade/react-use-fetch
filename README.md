@@ -7,7 +7,7 @@ React hook to fetch data from network, with some additional awesome features.
 ## Installation:
 
 ```
-npm i @react-use-hooks/use-fetch --save
+npm i @react-use-hooks/use-fetch
 ````
 
 ## Code:

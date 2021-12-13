@@ -1,6 +1,6 @@
 {
   "name": "@react-use-hooks/use-fetch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React hook to fetch data from network, with some additional awesome features.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
