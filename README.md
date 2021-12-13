@@ -1,11 +1,11 @@
-## What is this?
+## What is useFetch?
 
-A simple react component that prints Hello, {username}!
+React hook to fetch data from network, with some additional awesome features.
 
 ## Installation:
 
 ```
-npm i @amitdabade/react-hello --save
+npm i @react-use-hooks/use-fetch --save
 ````
 
 ## Code:
@@ -13,14 +13,26 @@ npm i @amitdabade/react-hello --save
 ```
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Hello } from "@amitdabade/react-hello";
+import { useFetch } from "@react-use-hooks/use-fetch";
 
 function App() {
+   const { fetch, data, error, fetching, status, request, response } = useFetch({
+    url: "https://jsonplaceholder.typicode.com/todos/1"
+   });
    return (
-    <div>
-       <Hello name="Amit" />
+    <div className="App">
+      <h1>React-use-hooks : useFetch</h1>
+      <button onClick={() => fetch()}>Fetch Data</button>
+      <p>Fetching: {fetching + ""}</p>
+      <p>Status: {status}</p>
+      <p>Request Method: {request?.method}</p>
+      <p>Request URL: {request?.url}</p>
+      <p>Response code: {response?.status}</p>
+      <p>Response Text: {response?.statusText}</p>
+      <p>Data: {data && JSON.stringify(data)}</p>
+      <p>Error: {error && error.message}</p>
     </div>
-  )
+  );
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));
@@ -28,11 +40,11 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 ## Demo:
 
-[Demo](https://codesandbox.io/s/react-hello-vnuw5)
+[Demo](https://codesandbox.io/s/react-use-fetch-demo-5kcix)
 
 ## Options:
 
-name : _string_ (Default: "World")
+url : _string_
 
 ## License:
 
