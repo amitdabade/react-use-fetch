@@ -42,7 +42,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 ## Demo:
 
-[Demo](https://codesandbox.io/s/react-use-fetch-demo-5kcix)
+[Demo](https://codesandbox.io/s/github/amitdabade/react-use-fetch-demo)
 
 ## Options:
 
