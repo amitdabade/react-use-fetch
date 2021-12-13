@@ -1,4 +1,4 @@
-# [React-use-fetch: useFetch] &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/amitdabade/react-use-fetch/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react.svg?style=flat)](https://www.npmjs.com/package/@react-use-hooks/use-fetch)
+# [React-use-fetch: useFetch] &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/amitdabade/react-use-fetch/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/@react-use-hooks/use-fetch?style=for-the-badge)](https://www.npmjs.com/package/@react-use-hooks/use-fetch)
 
 ## What is useFetch?
 
