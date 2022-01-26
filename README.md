@@ -2,7 +2,7 @@
 
 ## What is useFetch?
 
-React hook to fetch data from network, with some additional awesome features.
+useFetch is open source reusable react custom hook for making http requests with ease and built-in configurations
 
 ## Installation:
 
@@ -42,7 +42,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 ## Demo:
 
-[Demo](https://codesandbox.io/s/github/amitdabade/react-use-fetch-demo)
+[Demo](https://codesandbox.io/s/github/amitdabade/react-use-fetch-demo)  
 [Storybook](https://amitdabade.github.io/react-use-fetch)
 
 ## Configurations:
@@ -93,6 +93,10 @@ useFetch({
     url: "https://jsonplaceholder.typicode.com/posts"
   }, config);
 ```
+
+**Custom Config**
+
+[Demo](https://amitdabade.github.io/react-use-fetch/?path=/story/advance--delay)
 
 ## License:
 
