@@ -46,7 +46,37 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 ## Options:
 
-url : _string_
+### GET
+```
+useFetch({
+    url: "https://jsonplaceholder.typicode.com/todos/1"
+   })
+```
+
+### POST
+```
+useFetch({
+    url: "https://jsonplaceholder.typicode.com/posts",
+    method: "POST",
+    body: JSON.stringify({
+       "userId": 1,
+       "id": 1,
+       "title": "sunt aut facere",
+       "body": "quia et suscipit"
+     })
+   })
+```
+
+### HEADERS
+```
+useFetch({
+    url: "https://jsonplaceholder.typicode.com/posts",
+     headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+     }
+   })
+```
 
 ## License:
 
