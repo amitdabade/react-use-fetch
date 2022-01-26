@@ -43,17 +43,18 @@ ReactDOM.render(<App />, document.getElementById('root'));
 ## Demo:
 
 [Demo](https://codesandbox.io/s/github/amitdabade/react-use-fetch-demo)
+[Storybook](https://amitdabade.github.io/react-use-fetch)
 
-## Options:
+## Configurations:
 
-### GET
+**GET**
 ```
 useFetch({
     url: "https://jsonplaceholder.typicode.com/todos/1"
-   })
+  });
 ```
 
-### POST
+**POST**
 ```
 useFetch({
     url: "https://jsonplaceholder.typicode.com/posts",
@@ -63,11 +64,11 @@ useFetch({
        "id": 1,
        "title": "sunt aut facere",
        "body": "quia et suscipit"
-     })
-   })
+    })
+  });
 ```
 
-### HEADERS
+**HEADERS**
 ```
 useFetch({
     url: "https://jsonplaceholder.typicode.com/posts",
@@ -75,7 +76,22 @@ useFetch({
       'Accept': 'application/json',
       'Content-Type': 'application/json'
      }
-   })
+  });
+```
+
+**Default Config**
+```
+const config = {
+  delay: 0,
+  retry: 0,
+  refetchInterval: 0,
+  refetch: Infinity,
+  responseType: "text",
+};
+
+useFetch({
+    url: "https://jsonplaceholder.typicode.com/posts"
+  }, config);
 ```
 
 ## License:
