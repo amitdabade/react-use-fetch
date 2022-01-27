@@ -2,7 +2,7 @@
 
 ## What is useFetch?
 
-React hook to fetch data from network, with some additional awesome features.
+useFetch is open source reusable react custom hook for making http requests with ease and built-in configurations
 
 ## Installation:
 
@@ -42,11 +42,61 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 ## Demo:
 
-[Demo](https://codesandbox.io/s/github/amitdabade/react-use-fetch-demo)
+[Demo](https://codesandbox.io/s/github/amitdabade/react-use-fetch-demo)  
+[Storybook](https://amitdabade.github.io/react-use-fetch)
 
-## Options:
+## Configurations:
 
-url : _string_
+**GET**
+```
+useFetch({
+    url: "https://jsonplaceholder.typicode.com/todos/1"
+  });
+```
+
+**POST**
+```
+useFetch({
+    url: "https://jsonplaceholder.typicode.com/posts",
+    method: "POST",
+    body: JSON.stringify({
+       "userId": 1,
+       "id": 1,
+       "title": "sunt aut facere",
+       "body": "quia et suscipit"
+    })
+  });
+```
+
+**HEADERS**
+```
+useFetch({
+    url: "https://jsonplaceholder.typicode.com/posts",
+     headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+     }
+  });
+```
+
+**Default Config**
+```
+const config = {
+  delay: 0,
+  retry: 0,
+  refetchInterval: 0,
+  refetch: Infinity,
+  responseType: "text",
+};
+
+useFetch({
+    url: "https://jsonplaceholder.typicode.com/posts"
+  }, config);
+```
+
+**Custom Config**
+
+[Demo](https://amitdabade.github.io/react-use-fetch/?path=/story/advance--delay)
 
 ## License:
 
