@@ -1,7 +1,7 @@
 {
   "name": "@react-use-hooks/use-fetch",
-  "version": "1.0.1",
-  "description": "React hook to fetch data from network, with some additional awesome features.",
+  "version": "1.0.2",
+  "description": "useFetch is open source reusable react custom hook for making http requests with ease and built-in configurations",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
